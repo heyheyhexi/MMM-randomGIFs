@@ -20,7 +20,7 @@ Module.register("MMM-randomGIFs",{
 //		
 //		this.load();
 		setInterval(function () {
-				this.updateDom(1000);
+				self.updateDom(1000);
 				console.log('update')
 			}, this.config.updateInterval);
 	},
