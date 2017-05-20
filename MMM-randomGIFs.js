@@ -14,7 +14,7 @@ Module.register("MMM-randomGIFs",{
 		updateInterval: 60,
 	},
 	
-start: function() {
+load: function() {
 	var self = this;
 	setInterval(function() {
 		self.updateDom(1000); 
