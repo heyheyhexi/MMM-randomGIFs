@@ -15,17 +15,22 @@ Module.register("MMM-randomGIFs",{
 	},
 	
 	start: function () {
+		var self = this;
 //		var source = document.location.href = this.config.url;
 //		
-		this.load();
+//		this.load();
+		setInterval(function () {
+				this.updateDom(1000);
+				console.log('update')
+			}, this.config.updateInterval);
 	},
 	
-	load: function () {
-		setTimeout(function() {
-			this.load();
-		}, (this.config.updateInterval * 1000));
+//	load: function () {
+//		setTimeout(function() {
+//			this.load();
+//		}, (this.config.updateInterval * 1000));
 		
-	},
+//	},
 
 	getDom: function() {
 		var wrapper = document.createElement("div");
