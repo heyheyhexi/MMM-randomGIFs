@@ -14,15 +14,11 @@ Module.register("MMM-randomGIFs",{
 		updateInterval: 60,
 	},
 	
-	start: function () {
-		var self = this;
-//		var source = document.location.href = this.config.url;
-//		
-//		this.load();
-		setInterval(function () {
-				self.updateDom(1000);
-//				console.log('update')
-			}, this.config.updateInterval);
+start: function() {
+	var self = this;
+	setInterval(function() {
+		self.updateDom(60); // no speed defined, so it updates instantly.
+	}, 1000); //perform every 1000 milliseconds.
 	},
 	
 //	load: function () {
