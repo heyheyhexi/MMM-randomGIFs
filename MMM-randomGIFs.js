@@ -17,8 +17,8 @@ Module.register("MMM-randomGIFs",{
 start: function() {
 	var self = this;
 	setInterval(function() {
-		self.updateDom(60); // no speed defined, so it updates instantly.
-	}, 1000); //perform every 1000 milliseconds.
+		self.updateDom(1000); 
+	}, this.config.updateInterval); 
 	},
 	
 //	load: function () {
