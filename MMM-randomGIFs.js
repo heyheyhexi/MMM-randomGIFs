@@ -13,20 +13,7 @@ Module.register("MMM-randomGIFs",{
 		imageSize: 400,
 		updateInterval: 60,
 	},
-	
-load: function() {
-	var self = this;
-	setInterval(function() {
-		self.updateDom(1000); 
-	}, this.config.updateInterval); 
-	},
-	
-//	load: function () {
-//		setTimeout(function() {
-//			this.load();
-//		}, (this.config.updateInterval * 1000));
-		
-//	},
+
 
 	getDom: function() {
 		var wrapper = document.createElement("div");
