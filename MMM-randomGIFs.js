@@ -11,12 +11,21 @@ Module.register("MMM-randomGIFs",{
 	defaults: {
 		url: 'http://replygif.net/random',
 		imageSize: 400,
+		updateInterval: 60,
 	},
 	
-//	start: function () {
+	start: function () {
 //		var source = document.location.href = this.config.url;
 //		
-//	},
+		this.load();
+	},
+	
+	load: function () {
+		setTimeout(function() {
+			this.load();
+		}, (this.config.updateInterval * 1000));
+		
+	},
 
 	getDom: function() {
 		var wrapper = document.createElement("div");
