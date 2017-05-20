@@ -25,4 +25,4 @@ Module.register("MMM-randomGIFs",{
 		wrapper.innerHTML = '<iframe src="http://replygif.net/random" style="width:600px;height:600px;"></iframe>';
 		return wrapper;
 	},	
-};
+});
