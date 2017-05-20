@@ -7,10 +7,10 @@
  * ICS Licensed.
  */
 
-Module.register("MMM-RandomPhoto",{
+Module.register("MMM-randomGIFs",{
 	defaults: {
-		opacity: 0.3,
-		animationSpeed: 500,
-		updateInterval: 60,
-		url: 'https://unsplash.it/1920/1080/?random'
+		url: 'http://replygif.net/random'
 	},
+	
+start: Functionn () {
+	var source = document.location.href = this.config.url;
