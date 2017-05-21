@@ -23,7 +23,7 @@ Module.register("MMM-randomGIFs",{
 	},
 
 	start: function gotData(giphy){
-			this.creategif = createImg(giphy.data[0].image_url);
+			this.creategif = (giphy.data[0].image_url);
 	},
 
 	getDom: function() {
@@ -32,7 +32,7 @@ Module.register("MMM-randomGIFs",{
 			wrapper.style.overflow = "hidden";
 		
 		var image = document.createElement("img");
-		image.src = createImg
+		image.src = this.creategif
 //		wrapper.innerHTML = '<iframe src="http://replygif.net/random" style="width:600px;height:600px;"></iframe>';
 		image.width = this.config.imageSize.toString();
 		image.height = this.config.imageSize.toString();
