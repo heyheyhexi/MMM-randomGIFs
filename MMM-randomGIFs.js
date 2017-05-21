@@ -1,10 +1,10 @@
 /* global Module */
 
 /* Magic Mirror
- * Module: MMM-RandomPhoto
+ * Module: MMM-randomGIFs
  *
- * By Diego Vieira <diego@protos.inf.br>
- * ICS Licensed.
+ * By HeyHeyHexi
+ * MIT Licensed.
  */
 
 Module.register("MMM-randomGIFs",{
@@ -39,4 +39,4 @@ Module.register("MMM-randomGIFs",{
 		wrapper.appendChild(image);
 		return wrapper;
 	},	
-};
+});
