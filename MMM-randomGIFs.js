@@ -22,8 +22,8 @@ Module.register("MMM-randomGIFs",{
 		loadJSON(url, gotData);	
 	},
 
-	start: function gotData(giphy){
-			this.creategif = (data[0].image_url);
+		gotData(giphy){
+			this.creategif = (giphy.data[0].image_url);
 	},
 
 	getDom: function() {
