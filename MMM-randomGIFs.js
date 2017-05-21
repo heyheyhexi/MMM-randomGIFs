@@ -14,7 +14,7 @@ Module.register("MMM-randomGIFs",{
 	},
 	
 	start: function setup() {
-		noCanvas();
+//		noCanvas();
 		var api = "http://api.giphy.com/v1/gifs/random?"
 		var apiKey = "api_key=dc6zaTOxFJmzC"
 		var query = ""
