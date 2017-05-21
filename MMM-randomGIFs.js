@@ -21,9 +21,10 @@ Module.register("MMM-randomGIFs",{
 		var url = api + apiKey + query;
 		loadJSON(url, gotData);	
 	},
+
 	start: function gotData(giphy){
 			this.creategif = createImg(giphy.data[0].image_url);
-			}
+	},
 
 	getDom: function() {
 		var wrapper = document.createElement("div");
