@@ -23,7 +23,7 @@ Module.register("MMM-randomGIFs",{
 	},
 
 	start: function gotData(giphy){
-			this.creategif = (giphy.data[0].image_url);
+			this.creategif = (data[0].image_url);
 	},
 
 	getDom: function() {
