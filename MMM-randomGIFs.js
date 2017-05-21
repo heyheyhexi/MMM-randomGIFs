@@ -21,8 +21,8 @@ Module.register("MMM-randomGIFs",{
 		var url = api + apiKey + query;
 		loadJSON(url, gotData);	
 	},
-			function gotData(giphy){
-			var creategif = createImg(giphy.data[0].image_url);
+	start:	function gotData(giphy){
+		var creategif = createImg(giphy.data[0].image_url);
 			}
 
 	getDom: function() {
